@@ -1,0 +1,77 @@
+.about{
+    background-color: var(--pale-lavender);
+    color:var(--expresso);
+    padding-block: 96px;
+
+
+}
+
+.about .container{
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 64px;
+    
+    
+}
+.aboutContent{
+    min-width: 0;
+}
+.aboutImage {
+    min-width: 0;
+    position: relative;
+   
+}
+.aboutImage img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+}
+.waveLeft{
+    position: absolute;
+    bottom:-5%;
+    left:-10%;
+    width:48%;
+    z-index:2;
+    pointer-events: none;
+}
+.waveRight{
+    position: absolute;
+    top: -8%;
+    right: -15%;
+    width:65%;
+
+}
+
+.aboutPhoto{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+
+}
+
+.aboutContent h2{
+    font-family: var(--font-secondary);
+    font-size: clamp(2rem, 3.5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.15;
+    font-style: italic;
+    margin-block: 16px 24px;
+    letter-spacing: 0.03em;
+}
+.aboutContent p{
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+
+}
+.aboutContent strong{
+    color:#75429B;
+    font-weight: 800;
+}
+.aboutContent .eyebrow{
+    color:var(--eyebrown);
+}

@@ -1,3 +1,6 @@
+@import url("about.css");
+@import url("skills.css");
+@import url("projects.css");
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +18,7 @@
     --pale-lavender:#E6E0F0;
     --roxo:#D0a0f5;
     --roxo-hover:#E0B9FA;
+    --eyebrown:#75429B;
 
     /* FONTES */ 
     --font-primary:"Plus Jakarta Sans", sans-serif;
@@ -63,6 +67,17 @@ body{
      font-size: 48px;
      color: var(--roxo);
      font-weight: 400;
+}
+
+
+.eyebrow{
+    color:var(--eyebrown);
+    font-family: var(--font-tertiary);
+    font-size: 1em;
+    letter-spacing: 0.03em;
+
+
+
 }
 
 .presentation{
@@ -151,7 +166,7 @@ body{
     font-weight: 400;
     font-style: italic;
     line-height: 1.05;
-    letter-spacing: -0.03em;
+    letter-spacing: 0.03em;
 }
 .textHero span{
     color:var(--roxo);

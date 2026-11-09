@@ -1,0 +1,328 @@
+.projects{
+    background-color:var(--platinum-silver) ;
+    color:var(--expresso);
+    padding-block: 40px;
+    min-height: 0;
+}
+
+#areaProjects{
+    font-family: var(--font-secondary);
+    font-size: clamp(2rem, 3.5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.15;
+    font-style: italic;
+    margin-block: 16px 24px;
+    letter-spacing: 0.03em;
+    max-width: 850px;
+    text-wrap: balance;
+}
+#areaProjects strong{
+    color:#75429B;
+    font-weight: 800;
+}
+.carrossel {
+    position: relative;
+   
+}
+.carrosselViewport{
+    overflow: hidden;
+}
+.carrosselTrack{
+    display: flex;
+    align-items: flex-start;
+    gap:0;
+    align-items: flex-start;
+    transition: transform 0.5s ease-in-out;
+
+}
+.cardProjeto{
+    flex: 0 0 100%;
+    min-width: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap:32px;
+    padding: 32px;
+    border-radius: 20px;
+   
+}
+.cardBuscaCep{
+    background: radial-gradient(ellipse at 25% 35%,
+    #D0A0F5 0%,
+    #E6E0F0 48%,
+    #E5E4E2 100%
+ );
+
+}
+.cardDriveFlow{
+    background: radial-gradient(ellipse at 25% 35%,
+    #B9DCFF 0%,
+    #DDEEFF 48%,
+    #E5E4E2 100%
+ );
+
+}
+.cardTaskFlow{
+    background: radial-gradient(ellipse at 25% 35%,
+    #D9B5DD 0%,
+    #EEDFF0 48%,
+    #E5E4E2 100%
+ );
+
+}
+.cardMeteo{
+    background: radial-gradient(ellipse at 25% 35%,
+    #69B7F5 0%,
+    #B9DEFA 48%,
+    #E5E4E2 100%
+ );
+
+}
+.cardBuscaVaga{
+    background: radial-gradient(ellipse at 25% 35%,
+    #B39AF5 0%,
+    #DDD4FA 48%,
+    #E5E4E2 100%
+ );
+
+}
+.cardForm{
+    background: radial-gradient(ellipse at 25% 35%,
+    #E6A8D7 0%,
+    #F1DCEF 48%,
+    #E5E4E2 100%
+ );
+
+}
+.cardProjeto img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+.cardProjeto figcaption{
+    font-size: small;
+}
+.projectsInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+}
+.projectsInfo h3{
+    font-family: var(--font-secondary);
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-weight: 700;
+    color: var(--expresso);
+    line-height: 1.2;
+}
+.projectsInfo p {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color:var(--expresso);
+    max-width: 55ch;
+}
+
+.btnLinks{
+    display: flex;
+    align-items: center;
+    gap:16px;
+    flex-wrap: wrap;
+}
+
+.btn_github{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background-color: var(--expresso);
+    border-radius: 10px;
+    color:var(--platinum-silver);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+}
+.btn_github:hover{
+    background-color: var(--mocha-brown);
+
+}
+.btn_projeto{
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background-color: var(--eyebrown);
+    border-radius: 10px;
+    color:var(--platinum-silver);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.btn_projeto:hover{
+    background-color: #935BB8;
+}
+.btn_github:focus-visible,.btn_projeto:focus-visible{
+    outline: 3px solid #75429B;
+    outline-offset: 4px;
+}
+.previous,
+.next{
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--platinum-silver);
+    color:var(--expresso);
+    border: 1px solid rgba(57, 37, 31, 0.15);
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    transition: background-color 0.3s ease;
+}
+
+.previous:hover,
+.next:hover{
+    background-color: #D6D0CC;
+}
+
+.previous:focus-visible,
+.next:focus-visible{
+    outline: 3px solid var(--eyebrown);
+    outline-offset: 4px;
+}
+
+.previous{
+    left: -24px;
+}
+.next{
+    right: -24px;
+}
+
+.carrosselIindicators{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.carrosselIindicators button{
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+
+.carrosselIindicators button::before{
+    content: "";
+    display: block;
+    width: 14px;
+    height: 7px;
+    border-radius: 999px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    background-color: #B7ABA7;
+}
+
+.carrosselIindicators .active::before{
+    width: 32px;
+    background-color: var(--expresso);
+
+}
+.carrosselIindicators button:hover::before{
+    background-color: #8B7B77;
+}
+.carrosselIindicators .active:hover::before{
+    background-color: var(--expresso);
+
+}
+.carrosselIindicators button:focus-visible{
+    outline: 2px solid #75429B;
+    outline-offset: 2px;
+}
+
+@media(max-width:900px){
+    .cardProjeto{
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 24px;
+    }
+    .cardProjeto figure{
+        width: 100%;
+    }
+    .cardProjeto img{
+        max-width: 100%;
+    }
+    .projectsInfo{
+        gap: 12px;
+    }
+    .btnLinks{
+        display: flex;
+       flex-direction: row;
+       flex-wrap: nowrap;
+       white-space: nowrap;
+       gap: 12px;
+       width: 100%;
+        
+    }
+}
+@media(max-width:600px){
+    .cardProjeto{
+        padding: 16px;
+        gap: 16px;
+    }
+    .projectsInfo h3{
+        font-size: 1.5rem;
+    }
+    .projectsInfo p{
+        font-size: 0.9rem;
+    }
+    .carrossel{
+        display: grid;
+        grid-template-columns: 44px minmax(0, 1fr) 44px;
+        column-gap: 8px;
+        row-gap: 16px;
+       
+    }
+    .carrosselViewport{
+        grid-column: 1/-1;
+        grid-row: 1;
+        width: 100%;
+        min-width: 0;
+    }
+    .previous, .next{
+        position: static;
+        transform: none;
+        justify-self: center;
+        align-items: center;
+
+    }
+    .previous{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .next{
+        grid-column: 3;
+        grid-row: 2;
+    }
+    .carrosselIindicators{
+        grid-column: 2;
+        grid-row: 2;
+        margin-top: 0;
+
+    }
+}
+
+
+
