@@ -30,7 +30,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="scripts.js" defer></script>
     <title>Roberta Alves| Desenvolvedora FullStack</title>
   </head>
 
@@ -88,16 +89,14 @@
             <img
               src="assets/Laptop e Chave em Onda Metálica Lilás.png"
               alt="laptop e chave em onda metálica lilás"
-              
             />
           </div>
         </div>
-        
       </section>
 
       <section id="about" class="about">
         <div class="container">
-          <div class="aboutLeft">
+          <div class="aboutContent">
             <span class="eyebrow"> Minha trajetória </span>
             <h2>Da operação ao <strong>front-end</strong></h2>
 
@@ -123,22 +122,25 @@
               Busco minha primeira oportunidade em front-end para transformar
               essa bagagem em valor real dentro de uma equipe.
             </p>
-            <p class="mobile-p">
-              Vim da supervisão operacional no setor aeroportuário e trouxe
-              comigo o que aprendi lá: atenção a processos, foco no usuário e
-              responsabilidade com o resultado. Como motorista de aplicativo
-              aprendi na prática o que é<strong>
-                resolver problemas com o que você tem</strong
-              >, adaptar rota quando o caminho muda e manter a calma sob
-              pressão.
-            </p>
           </div>
-          <div class="aboutRight">
+          <div class="aboutImage">
             <img
+              class="waveLeft"
+              src="assets/Ondas Metálicas Roxas e Rosadas esquerda.png"
+              alt="onda metalica roxa esquerda"
+              loading="lazy"
+            />
+            <img
+              class="waveRight"
+              src="assets/onda_direita.png"
+              alt="onda metalica roxa direita"
+              loading="lazy"
+            />
+            <img
+              class="aboutPhoto"
               src="assets/roberta-foto-otimizada.jpg"
               alt="foto profissional Roberta Alves"
               loading="lazy"
-              
             />
           </div>
         </div>
@@ -160,7 +162,7 @@
           </div>
           <div class="skills-grid">
             <article class="skill-card">
-              <h3>&gt;/ &lt; Front-End</h3>
+              <h3><span> &lt;/&gt; </span>Front-End</h3>
 
               <div class="skill-tags">
                 <span>HTML5</span>
@@ -216,53 +218,287 @@
         <div class="container">
           <div class="projects-header">
             <span class="eyebrow">Meus Projetos</span>
-            <h2>
+            <h2 id="areaProjects">
               Projetos desenvolvidos para resolver
-              <strong>problemas reais</strong> e consolidar minha evolução como
-              desenvolvedora Front-End.
+              <strong>problemas reais</strong>
             </h2>
           </div>
           <!--Seção de projetos-->
-          <div class="carrossel">
-            <div class="cardProjeto">
-              <button
-                class="previous"
-                type="button"
-                aria-label="Projeto anterior"
-              >
-                <i class="fa-solid fa-circle-arrow-left"></i>
-              </button>
+          <div class="carrossel" role="region" aria-labelledby="areaProjects">
+            <button
+              class="previous"
+              type="button"
+              aria-label="Projeto anterior"
+            >
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
 
-              <button class="next" type="button" aria-label="Proximo projeto">
-                <i class="fa-solid fa-circle-arrow-right"></i>
-              </button>
-              <figure>
-                <img
-                  src="assets/Mockup Busca CEP Brasil no laptop.png"
-                  alt="mockup do projeto pessoal busca cep"
-                  
-                />
-                <figcaption>
-                  Imagem promocional ilustrativa, criada com auxílio de IA.
-                </figcaption>
-              </figure>
-              <h3>BuscaCep</h3>
-              <p>
-                Aplicação web para consultar CEPs e localizar endereços em todo
-                o Brasil, utilizando a API ViaCEP. Interface responsiva com
-                validação de dados e tratamento de erros.
-              </p>
-              <a
-                href="https://github.com/roberta2020raa/busca-cep-brasil"
-                class="btn_github"
-              >
-                <i class="fa-brands fa-github"></i>
-                Github
-              </a>
-              <a href="https://github.com/roberta2020raa/busca-cep-brasil" class="btn_projeto">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                Ver projeto
-              </a>
+            <div class="carrosselViewport">
+              <div class="carrosselTrack">
+                <article class="cardProjeto cardBuscaCep active">
+                  <figure>
+                    <img
+                      src="assets/projects/Busca CEP Brasil_ Conectando Endereços.png"
+                      alt="imagem de um notebook,na tela apresenta a versão um do busca-cep-brasil"
+                    />
+                    <figcaption>
+                      Imagem promocional ilustrativa, criada com auxílio de IA.
+                    </figcaption>
+                  </figure>
+
+                  <div class="projectsInfo">
+                    <h3>Busca-cep-Brasil</h3>
+                    <p>
+                      Aplicação web para consultar CEPs e localizar endereços em
+                      todo o Brasil, utilizando a API ViaCEP. Interface
+                      responsiva com validação de dados e tratamento de erros.
+                    </p>
+                    <div class="btnLinks">
+                      <a
+                        href="https://github.com/roberta2020raa/busca-cep-brasil"
+                        class="btn_github"
+                      >
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                      </a>
+                      <a
+                        href="https://github.com/roberta2020raa/busca-cep-brasil"
+                        class="btn_projeto"
+                      >
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        Ver projeto
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="cardProjeto cardDriveFlow">
+                  <figure>
+                    <img
+                      src="assets/projects/Banner promocional do DriveFlow.png"
+                      alt="imagem de um notebook,na tela apresenta a versão um do DriveFlow"
+                    />
+                    <figcaption>
+                      Imagem promocional ilustrativa, criada com auxílio de IA.
+                    </figcaption>
+                  </figure>
+                  <div class="projectsInfo">
+                    <h3>DriveFlow</h3>
+                    <p>
+                      Aplicação web mobile-first voltada à gestão financeira de
+                      motoristas de aplicativo. O projeto reúne o planejamento
+                      de jornadas, registro de ganhos e despesas e
+                      acompanhamento financeiro em uma interface intuitiva e
+                      responsiva.
+                    </p>
+
+                    <div class="btnLinks">
+                      <a
+                        href="https://github.com/roberta2020raa/driveFlow"
+                        class="btn_github"
+                      >
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                      </a>
+                      <a
+                        href="https://github.com/roberta2020raa/driveFlow"
+                        class="btn_projeto"
+                      >
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        Ver projeto
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="cardProjeto cardTaskFlow">
+                  <figure>
+                    <img
+                      src="assets/projects/Banner promocional do TaskFlow.png"
+                      alt="imagem de um notebook,na tela apresenta a versão um do TaskFlow"
+                    />
+                    <figcaption>
+                      Imagem promocional ilustrativa, criada com auxílio de IA.
+                    </figcaption>
+                  </figure>
+                  <div class="projectsInfo">
+                    <h3>TaskFlow-Gerenciador de tarefas</h3>
+                    <p>
+                      Aplicação web para organização e gerenciamento de tarefas
+                      pessoais. O projeto contempla operações de cadastro,
+                      edição e exclusão de tarefas, filtros por status e uma
+                      interface responsiva, com foco em usabilidade e
+                      produtividade.
+                    </p>
+                    <div class="btnLinks">
+                      <a
+                        href="https://github.com/roberta2020raa/Taskflow-Gerenciador-de-Tarefas"
+                        class="btn_github"
+                      >
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                      </a>
+                      <a
+                        href="https://github.com/roberta2020raa/Taskflow-Gerenciador-de-Tarefas"
+                        class="btn_projeto"
+                      >
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        Ver projeto
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="cardProjeto cardMeteo">
+                  <figure>
+                    <img
+                      src="assets/projects/Banner de Projeto Meteorológico em Azul.png"
+                      alt="imagem de um notebook,na tela apresenta a versão um do App Meteorológico"
+                    />
+                    <figcaption>
+                      Imagem promocional ilustrativa, criada com auxílio de IA.
+                    </figcaption>
+                  </figure>
+                  <div class="projectsInfo">
+                    <h3>App Meteorológico</h3>
+                    <p>
+                      Aplicação web de consulta meteorológica, desenvolvida para
+                      apresentar informações climáticas de diferentes cidades. O
+                      projeto explora integração com APIs, comunicação entre
+                      front-end e back-end e interfaces visuais adaptadas às
+                      condições do tempo.
+                    </p>
+                    <div class="btnLinks">
+                      <a
+                        href="https://github.com/roberta2020raa/app-meteorologico"
+                        class="btn_github"
+                      >
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                      </a>
+                      <a
+                        href="https://github.com/roberta2020raa/app-meteorologico"
+                        class="btn_projeto"
+                      >
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        Ver projeto
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="cardProjeto cardBuscaVaga">
+                  <figure>
+                    <img
+                      src="assets/projects/Banner de projeto_ Agente de IA para vagas.png"
+                      alt="imagem de um notebook,na tela apresenta a versão um do App buscador de vagas com ia"
+                    />
+                    <figcaption>
+                      Imagem promocional ilustrativa, criada com auxílio de IA.
+                    </figcaption>
+                  </figure>
+                  <div class="projectsInfo">
+                    <h3>Buscador de Vaga com IA</h3>
+                    <p>
+                      Projeto de automação para busca de oportunidades
+                      profissionais com base em um perfil personalizado. A
+                      proposta utiliza inteligência artificial para apoiar a
+                      identificação de vagas compatíveis com tecnologias, nível
+                      de experiência e preferências de trabalho
+                    </p>
+                    <div class="btnLinks">
+                      <a
+                        href="https://github.com/roberta2020raa/buscador-vagas-ia"
+                        class="btn_github"
+                      >
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                      </a>
+                      <a
+                        href="https://github.com/roberta2020raa/buscador-vagas-ia"
+                        class="btn_projeto"
+                      >
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        Ver projeto
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="cardProjeto cardForm">
+                  <figure>
+                    <img
+                      src="assets/projects/Banner Formulário Full Stack em Roxo.png"
+                      alt="imagem de um notebook,na tela apresenta a versão um do formulario Full Stack"
+                    />
+                    <figcaption>
+                      Imagem promocional ilustrativa, criada com auxílio de IA.
+                    </figcaption>
+                  </figure>
+                  <div class="projectsInfo">
+                    <h3>Formulario Full Stack</h3>
+                    <p>
+                      Projeto full stack de cadastro de usuários, desenvolvido
+                      com HTML, CSS, JavaScript, Node.js e Express. Explora
+                      validação de dados no front-end e back-end, comunicação
+                      por API REST e preparação para persistência em banco de
+                      dados.
+                    </p>
+                    <div class="btnLinks">
+                      <a
+                        href="https://github.com/roberta2020raa/Formulario-fullStack"
+                        class="btn_github"
+                      >
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                      </a>
+                      <a
+                        href="https://github.com/roberta2020raa/Formulario-fullStack"
+                        class="btn_projeto"
+                      >
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        Ver projeto
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <button class="next" type="button" aria-label="Próximo projeto">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <div class="carrosselIindicators">
+              <button
+                type="button"
+                aria-label="Ir para o projeto Busca-cep-Brasil"
+                class="active"
+              ></button>
+
+              <button
+                type="button"
+                aria-label="Ir para o projeto DriveFlow"
+              ></button>
+
+              <button
+                type="button"
+                aria-label="Ir para o projeto TaskFlow"
+              ></button>
+
+              <button
+                type="button"
+                aria-label="Ir para o projeto app-meteorologico"
+              ></button>
+
+              <button
+                type="button"
+                aria-label="Ir para o projeto buscador-vagas-ia"
+              ></button>
+
+              <button
+                type="button"
+                aria-label="Ir para o projeto Formulario-fullStack"
+              ></button>
             </div>
           </div>
         </div>
@@ -331,7 +567,6 @@
               src="assets/euMac.png"
               alt="foto profissional Roberta com notebook"
               loading="lazy"
-              
             />
           </div>
         </div>
