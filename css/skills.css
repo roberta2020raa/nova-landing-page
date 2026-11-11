@@ -79,9 +79,6 @@
     .skills{
         padding-block: 64px;
     }
-    .skill-card{
-        padding: 24px;
-    }
     .skills-header h2{
         font-size: clamp(2rem, 6vw, 2.75rem);
     }

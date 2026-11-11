@@ -1,0 +1,113 @@
+footer{
+    background-color: var(--expresso);
+    color: var(--platinum-silver);
+    padding-block: 48px 24px;
+}
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    border-bottom: 1px solid #876C69;
+}
+.container.footerContent{
+    padding-bottom: 32px;
+}
+
+.footerNav{
+    display: flex;
+    gap: 24px;
+    
+  
+}
+
+.footerNav a{
+    text-decoration: none;
+    color: var(--platinum-silver);
+    transition: color 0.3s ease;
+}
+.footerNav a:hover{
+    color:var(--roxo);
+}
+.footerNav a:focus-visible{
+
+    outline: 2px solid var(--roxo);
+    outline-offset: 2px;
+}
+.rigthSide{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.footerSocial{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+   
+}
+.footerSocial i{
+    font-size: 26px;
+}
+
+.footerSocial a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    color: var(--roxo);
+    text-decoration: none;
+}
+.footerSocial a:focus-visible{
+    outline: 2px solid var(--roxo);
+    outline-offset: 2px;
+
+}
+
+.footerBrand span{
+    color: var(--roxo);
+}
+
+.footerBrand a {
+    text-decoration: none;
+    color: var(--platinum-silver);
+}
+.footerBrand a:focus-visible{
+    outline: 2px solid var(--roxo);
+    outline-offset: 2px;
+
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bottom p{
+    color: var(--platinum-silver);
+    font-size: small;
+    margin-top: 32px;
+}
+
+@media(max-width:768px){
+    .footerContent{
+        flex-direction:column;
+        align-items: center;
+        text-align: center;   
+    }
+    .rigthSide{
+        align-items: center;
+    }
+    .footerNav{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+    .footer-bottom{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+    }
+    .footer-bottom p{
+        margin-top: 0;
+    }
+}

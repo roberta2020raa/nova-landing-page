@@ -2,6 +2,7 @@
     background-color: var(--pale-lavender);
     color:var(--expresso);
     padding-block: 96px;
+    min-height: 100vh;
 
 
 }
@@ -22,7 +23,7 @@
     position: relative;
    
 }
-.aboutImage img{
+.aboutImage .aboutPhoto img{
     display: block;
     width: 100%;
     height: auto;
@@ -71,7 +72,37 @@
 .aboutContent strong{
     color:#75429B;
     font-weight: 800;
+    white-space: nowrap;
 }
 .aboutContent .eyebrow{
     color:var(--eyebrown);
 }
+
+@media(max-width:768px){
+    .about .container{
+        grid-template-columns: 1fr;
+        gap: 32px;
+
+    }
+    .waveLeft{
+        width: 75%;
+    }
+    .waveRight{
+        width: 80%;
+        top:-5%;
+        right: -5%;
+    }
+    .aboutContent h2{
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+    .aboutContent p {
+        font-size: 0.875rem;
+        line-height: 1.6;
+        margin-bottom: 12px;
+    }
+    .about{
+        padding-block: 48px;
+    }
+}
+

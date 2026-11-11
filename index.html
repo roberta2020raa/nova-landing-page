@@ -41,19 +41,36 @@
         <nav class="menuPrincipal">
           <div class="principal">
             <span>&lt/&gt</span>
-
             <div class="presentation">
               <p>Roberta <span class="sobrenome"> Alves</span></p>
-              <p>Desenvolvedora FullStack em formação</p>
+              <p>Desenvolvedora Full Stack em formação</p>
             </div>
           </div>
 
-          <ul class="menuList">
+          <div class="principalMobile">
+            <span>&lt/&gt</span>
+            <div class="presentationMobile">
+              <p>Roberta <span class="sobrenome"> Alves</span></p>
+              <p>Dev Full Stack</p>
+            </div>
+          </div>
+
+          <ul class="menuList" id="menuList">
             <li class="nav-item active"><a href="#about">Sobre</a></li>
             <li class="nav-item"><a href="#skills">Skills</a></li>
             <li class="nav-item"><a href="#projects">Projetos</a></li>
             <li class="nav-item"><a href="#contact">Contato</a></li>
           </ul>
+
+          <button
+            type="button"
+            class="menuMobile"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="menuList"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
 
           <a href="#contact" class="link_menu">
             <i class="fa-regular fa-paper-plane"></i>
@@ -98,7 +115,7 @@
         <div class="container">
           <div class="aboutContent">
             <span class="eyebrow"> Minha trajetória </span>
-            <h2>Da operação ao <strong>front-end</strong></h2>
+            <h2>Da operação ao <strong>Full Stack</strong></h2>
 
             <p>
               Vim da supervisão operacional no setor aeroportuário, onde aprendi
@@ -119,7 +136,7 @@
               perto.
             </p>
             <p>
-              Busco minha primeira oportunidade em front-end para transformar
+              Busco minha primeira oportunidade Full Stack para transformar
               essa bagagem em valor real dentro de uma equipe.
             </p>
           </div>
@@ -257,6 +274,8 @@
                       <a
                         href="https://github.com/roberta2020raa/busca-cep-brasil"
                         class="btn_github"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <i class="fa-brands fa-github"></i>
                         GitHub
@@ -264,6 +283,8 @@
                       <a
                         href="https://github.com/roberta2020raa/busca-cep-brasil"
                         class="btn_projeto"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         Ver projeto
@@ -296,6 +317,8 @@
                       <a
                         href="https://github.com/roberta2020raa/driveFlow"
                         class="btn_github"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <i class="fa-brands fa-github"></i>
                         GitHub
@@ -303,6 +326,8 @@
                       <a
                         href="https://github.com/roberta2020raa/driveFlow"
                         class="btn_projeto"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         Ver projeto
@@ -334,6 +359,8 @@
                       <a
                         href="https://github.com/roberta2020raa/Taskflow-Gerenciador-de-Tarefas"
                         class="btn_github"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <i class="fa-brands fa-github"></i>
                         GitHub
@@ -341,6 +368,8 @@
                       <a
                         href="https://github.com/roberta2020raa/Taskflow-Gerenciador-de-Tarefas"
                         class="btn_projeto"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         Ver projeto
@@ -372,6 +401,8 @@
                       <a
                         href="https://github.com/roberta2020raa/app-meteorologico"
                         class="btn_github"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <i class="fa-brands fa-github"></i>
                         GitHub
@@ -379,6 +410,8 @@
                       <a
                         href="https://github.com/roberta2020raa/app-meteorologico"
                         class="btn_projeto"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         Ver projeto
@@ -410,6 +443,8 @@
                       <a
                         href="https://github.com/roberta2020raa/buscador-vagas-ia"
                         class="btn_github"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <i class="fa-brands fa-github"></i>
                         GitHub
@@ -417,6 +452,8 @@
                       <a
                         href="https://github.com/roberta2020raa/buscador-vagas-ia"
                         class="btn_projeto"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         Ver projeto
@@ -448,6 +485,8 @@
                       <a
                         href="https://github.com/roberta2020raa/Formulario-fullStack"
                         class="btn_github"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <i class="fa-brands fa-github"></i>
                         GitHub
@@ -455,6 +494,8 @@
                       <a
                         href="https://github.com/roberta2020raa/Formulario-fullStack"
                         class="btn_projeto"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         Ver projeto
@@ -509,58 +550,68 @@
           <div class="contact-Left">
             <div class="contactHeader">
               <span class="eyebrow">Contato</span>
-              <h2>Entre em contato</h2>
+              <h2>Entre em <strong>contato</strong></h2>
               <p>Tem um projeto em mente? Vamos conversar.</p>
             </div>
 
             <form class="formPrincipal">
-              <i class="fa-regular fa-user"></i>
-              <label for="contact-name">Nome</label>
-              <input
-                id="contact-name"
-                name="name-area"
-                type="text"
-                placeholder="Digite seu nome"
-                minlength="3"
-                required
-              />
-              <i class="fa-regular fa-envelope"></i>
-              <label for="contact-text">Mensagem</label>
-              <textarea
-                id="contact-text"
-                name="contact-area"
-                placeholder="Digite sua mensagem"
-                minlength="10"
-                required
-              ></textarea>
+              <div class="formGroup">
+                <label for="contact-name">Nome</label>
+                <div class="inputWrapper">
+                  <i class="fa-regular fa-user"></i>
+                  <input
+                    id="contact-name"
+                    name="name-area"
+                    type="text"
+                    placeholder="Digite seu nome"
+                    minlength="3"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="formGroup">
+                <label for="contact-text">Mensagem</label>
+                <div class="inputWrapper">
+                  <i class="fa-regular fa-envelope"></i>
+                  <textarea
+                    id="contact-text"
+                    name="contact-area"
+                    placeholder="Digite sua mensagem"
+                    minlength="10"
+                    required
+                  ></textarea>
+                </div>
+              </div>
               <button class="enviar" type="submit">Enviar</button
               ><!--enviar a mensagem para meu zap-->
             </form>
 
-            <p>Ou conecte-se comigo pelas redes</p>
+            <p class="contactP">Ou conecte-se comigo pelas redes</p>
+            <div class="contactSocial">
+              <a href="mailto:roberta2020.raa@gmail.com">
+                <i class="fa-regular fa-envelope"></i>
+                E-mail
+              </a>
 
-            <a href="mailto:roberta2020.raa@gmail.com">
-              <i class="fa-regular fa-envelope"></i>
-              E-mail
-            </a>
+              <a
+                href="https://www.linkedin.com/in/robertadaanunciaçãoalves"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+                LinkedIn
+              </a>
 
-            <a
-              href="https://www.linkedin.com/in/robertadaanunciaçãoalves"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-              LinkedIn
-            </a>
-
-            <a
-              href="https://github.com/roberta2020raa"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fa-brands fa-github"></i>
-              GitHub
-            </a>
+              <a
+                href="https://github.com/roberta2020raa"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-github"></i>
+                GitHub
+              </a>
+            </div>
           </div>
           <div class="contact-right">
             <img
@@ -571,6 +622,46 @@
           </div>
         </div>
       </section>
+      <footer>
+        <div class="container footerContent">
+          <div class="footerBrand">
+            <a href="#hero" aria-label="Voltar ao início">
+              <span>&lt;/&gt;</span> Roberta Alves
+            </a>
+            <p>Desenvolvedora Full Stack em formação</p>
+          </div>
+          <div class="rigthSide">
+            <nav class="footerNav" aria-label="Navegação rodapé">
+              <a href="#about">Sobre</a>
+              <a href="#skills">Skills</a>
+              <a href="#projects">Projetos</a>
+              <a href="#contact">Contato</a>
+            </nav>
+            <div class="footerSocial">
+              <a
+                href="https://github.com/roberta2020raa"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/robertadaanunciaçãoalves"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="container footer-bottom">
+          <p>&copy; 2026 Roberta Alves. Todos os direitos reservados.</p>
+          <p>Desenvolvido com dedicação e código.</p>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

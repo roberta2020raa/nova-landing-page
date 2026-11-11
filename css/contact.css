@@ -1,0 +1,225 @@
+#contact{
+    box-sizing: border-box;
+    background-color: var(--mocha-brown);
+    color:var(--platinum-silver);
+    padding-block: 96px;
+    min-height: 100vh;
+
+}
+html {
+    scroll-padding-top: 0;
+}
+
+#contact {
+    scroll-margin-top: 0;
+}
+
+.contact > .container{
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 64px;
+    min-width: 0;
+
+}
+.contact-Left{
+    min-width: 0
+}
+
+.contactHeader {
+    margin-bottom: 32px;
+
+}
+.contactHeader .eyebrow{
+    color:#D0A0F5;
+}
+
+.contactHeader h2{
+    font-family: var(--font-secondary);
+    font-size: clamp(2rem, 3.5vw, 3.5rem);
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.15;
+    margin-block: 16px 20px;
+    color:var(--platinum-silver);
+}
+.contactHeader strong{
+    color:var(--roxo);
+}
+
+.contactHeader p{
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    line-height:1.6;
+    color:var(--platinum-silver);
+}
+.formPrincipal{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+.formPrincipal input, .formPrincipal textarea{
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #876C69;
+    background-color: var(--pale-lavender);
+    color:var(--expresso);
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    padding-left: 48px;
+    box-sizing: border-box;
+}
+.formPrincipal input:focus-visible, .formPrincipal textarea:focus-visible{
+    outline: 2px solid #D0A0F5;
+    outline-offset: 2px;
+    border-color: #75429B;
+
+}
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.inputWrapper{
+    position: relative;
+    width: 100%;
+}
+.inputWrapper i {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color:var(--mocha-brown);
+    pointer-events: none;
+    
+}
+.inputWrapper:has(textarea) i{
+    top: 20px;
+    transform: none;
+}
+.enviar{
+    background-color: #D0A0F5;
+    color:var(--expresso);
+    border: none;
+    border-radius: 12px;
+    padding: 16px 28px;
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor:pointer;
+    transition: background-color 0.25s ease,transform 0.25s ease;
+}
+.enviar:hover{
+    background-color: #E0B9FA;
+    transform: translateY(-2px);
+}
+.enviar:focus-visible{
+    outline: 3px solid #E6E0F0;
+    outline-offset: 3px;
+}
+.contactP{
+    color:var(--platinum-silver);
+    margin-top: 28px;
+   
+
+}
+.contactSocial{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    align-items: center;
+    gap: 24px;
+    margin-top: 20px;
+}
+.contactSocial a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding:0;
+    color:var(--pale-lavender);
+    text-decoration: none;
+    transition:color 0.25s ease;
+}
+
+.contactSocial i{
+    color:var(--roxo);
+}
+.contactSocial a:hover{
+    color:#D0A0F5;
+}
+.contactSocial a:focus-visible{
+    outline: 2px solid #D0A0F5;
+    outline-offset: 4px;
+    border-radius: 4px;
+
+}
+.contact-right{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 0;
+  
+}
+.contact-right img{
+    display: block;
+    position: relative;
+    width:100%;
+    max-width: 420px;
+    height: 500px;
+    object-fit: cover;
+    object-position: right;
+    border-radius: 30px;
+    z-index: 1;
+}
+@media(max-width:900px){
+    .contact >.container{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    #contact{
+        padding-block: 72px;
+
+    }
+    .contact-right{
+        justify-content: center;
+    }
+    .contact-right img{
+        max-width: 420px;
+    }
+}
+
+@media(max-width:600px){
+    #contact{
+        padding-block: 56px;
+
+    }
+    .contact >.container{
+        gap: 32px;
+    }
+    .contactHeader{
+        margin-bottom: 24px;
+    }
+    .contactHeader h2{
+        font-size: clamp(2rem, 7vw, 2.75rem);
+    }
+    .formPrincipal{
+        gap: 16px;
+    }
+    .formPrincipal textarea{
+        min-height: 120px;
+        resize: vertical;
+    }
+
+    .contactSocial{
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .contact-right img{
+        width: 100%;
+        max-width: 360px;
+        height: 420px;
+    }
+}
