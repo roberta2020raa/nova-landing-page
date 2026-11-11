@@ -174,6 +174,29 @@ html {
     border-radius: 30px;
     z-index: 1;
 }
+.btnCurriculo{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding:14px 22px;
+        border:2px solid var(--roxo);
+        border-radius: 12px;
+        background-color: transparent;
+        color:var(--roxo);
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        margin-top: 12px;
+}
+.btnCurriculo:hover{
+    background-color: var(--roxo);
+    color: var(--expresso);
+    border-color: var(--roxo);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
 @media(max-width:900px){
     .contact >.container{
         grid-template-columns: 1fr;
